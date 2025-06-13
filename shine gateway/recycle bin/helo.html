@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shine Gateway</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <style>
+        body {
+            background-color: #fff3eb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header-section h1 {
+            color: #ff5e78;
+            font-weight: 800;
+            font-size: 3rem;
+            margin-top: 15px;
+            text-shadow: 1px 1px 3px rgba(255, 94, 120, 0.7);
+        }
+
+        .header-section p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .student-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 200px;
+            height: 100%;
+        }
+
+        .student-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .student-card .icon {
+            font-size: 100px;
+            color: #ff5e78;
+            margin-bottom: 15px;
+        }
+
+        .btn-outline-primary {
+            color: #ff5e78;
+            border-color: #ff5e78;
+            font-weight: 600;
+            padding: 0.5rem 1.3rem;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #ff5e78;
+            color: white;
+            box-shadow: 0 8px 15px rgba(255, 94, 120, 0.4);
+        }
+
+        /* Equal Card Height Fix */
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .col-sm-6, .col-md-4, .col-lg-3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .header-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .btn-outline-primary {
+                font-size: 0.9rem;
+                padding: 0.4rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 80px;
+            }
+
+            .header-section h1 {
+                font-size: 2rem;
+            }
+
+            .btn-outline-primary {
+                font-size: 0.85rem;
+                padding: 0.35rem 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-section">
+        <img src="logo.png" alt="Shine Logo" class="logo">
+        <h1>Shine Gateway</h1>
+        <p class="text-muted">Empowering You for a Bright Future</p>
+    </div>
+
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="student-card">
+                    <i class="fas fa-users" style="font-size:80px;color:rgb(250, 100, 100)"></i>
+
+                    <a href="about.html" class="btn btn-outline-primary">About</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="student-card">
+                    <i class="fas fa-award icon" style="color: rgb(250, 100, 100);"></i>
+                    <a href="student.html" class="btn btn-outline-primary">Achievements</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="student-card">
+<i class="fa fa-sign-in" style="font-size:80px;color:rgb(250, 100, 100)"></i>
+                    <a href="login.html" class="btn btn-outline-primary">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

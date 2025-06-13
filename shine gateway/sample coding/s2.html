@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakainfosys</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background-color: #004d00;
+      color: white;
+      padding: 5px 20px;
+      font-size: 14px;
+    }
+
+    .top-bar i {
+      margin-right: 5px;
+    }
+
+    .top-bar .right-icons i {
+      margin-left: 10px;
+    }
+
+    .navbar {
+      padding: 10px 20px;
+    }
+
+    .navbar-brand img {
+      height: 60px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #28a745;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      z-index: 0;
+    }
+
+    .hero {
+      background: url('https://i.imgur.com/qxoh3sN.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h5 {
+      letter-spacing: 2px;
+      color: #b6ff00;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+
+    .hero .highlight {
+      color: #ffff00;
+    }
+
+    .hero .btn {
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 25px;
+    }
+
+    .btn-success {
+      background: linear-gradient(to right, #28a745, #1b4f72);
+      border: none;
+    }
+
+    .btn-light {
+      border: none;
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+    
+  <!-- Top Info Bar -->
+  <div class="top-bar d-flex justify-content-between align-items-center">
+    <div>
+      <i class="fas fa-envelope"></i> enquiry@sakainfosys.com
+      <span class="ms-3"><i class="fas fa-map-marker-alt"></i> Vallimalai Rd, Kumarappan Naga, Katpadi, Vellore.</span>
+    </div>
+    <div class="right-icons">
+      Help / Support / Contact
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://i.postimg.cc/J0rN1qSJ/rk-logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <i class="fas fa-search ms-3"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="content">
+      <h5>WELCOME TO SAKAINFOSYS ENTERPRISE PVT LTD</h5>
+      <h1>The Catalyst For Your <br><span class="highlight">Digital Innovation.</span></h1>
+      <div class="mt-4">
+        <a href="#" class="btn btn-success me-3">Explore Now</a>
+        <a href="#" class="btn btn-light">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Particle JS Config -->
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 70,
+          "density": { "enable": true, "value_area": 800 }
+        },
+        "color": { "value": "#ffffff" },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000000" }
+        },
+        "opacity": {
+          "value": 0.3,
+          "random": true
+        },
+        "size": {
+          "value": 3,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.2,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1.2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "grab": { "distance": 150, "line_linked": { "opacity": 0.4 } },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
